@@ -51,6 +51,11 @@ var upload = multer({
 app.get("/",function(req,res){ 
 	res.render("index"); 
 }) 
+
+// WYSIWYG editor view
+app.get("/werighteverything",function(req,res){ 
+	res.render("werighter"); 
+})
 	
 app.post("/uploadProfilePicture",function (req, res, next) { 
 		
